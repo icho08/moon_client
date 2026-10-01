@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "moondlc",
+  "version": "1.0.0",
+  "name": "Moondlc",
+  "description": "Utility client mod for an enhanced gameplay experience",
+  "authors": [
+    "M0vy",
+    "Vixarly"
+  ],
+  "contact": {
+    "homepage": "i753.online"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/moondlc/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "preLaunch": [
+      "us.movy.moondlc.OfflineDefaults",
+      "us.m0vy.moondlc.m0vyguard.طغ"
+    ],
+    "client": [
+      "us.m0vy.moondlc.m0vyguard.بنض"
+    ]
+  },
+  "mixins": [
+    "moondlc.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  },
+  "accessWidener": "moondlc.accesswidener",
+  "jars": [
+    {
+      "file": "META-INF/jars/catboost-prediction-1.2.7.jar"
+    },
+    {
+      "file": "META-INF/jars/core-3.5.3.jar"
+    },
+    {
+      "file": "META-INF/jars/javase-3.5.3.jar"
+    },
+    {
+      "file": "META-INF/jars/nanohttpd-2.3.1.jar"
+    }
+  ]
+}

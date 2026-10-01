@@ -1,0 +1,17 @@
+{
+    "vertex": "moondlc:core/hand_blend",
+    "fragment": "moondlc:core/hand_blend",
+    "samplers": [
+        { "name": "Sampler0" },
+        { "name": "Sampler1" },
+        { "name": "Sampler2" }
+    ],
+    "uniforms": [
+        { "name": "ModelViewMat", "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+        { "name": "ProjMat", "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+        { "name": "BlendMode", "type": "int", "count": 1, "values": [ 0 ] },
+        { "name": "BlendIntensity", "type": "float", "count": 1, "values": [ 1.0 ] },
+        { "name": "Shader1Strength", "type": "float", "count": 1, "values": [ 1.0 ] },
+        { "name": "Shader2Strength", "type": "float", "count": 1, "values": [ 1.0 ] }
+    ]
+}

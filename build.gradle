@@ -1,0 +1,90 @@
+plugins {
+    id 'fabric-loom' version '1.16.2'
+    id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'Fabric'
+        url = 'https://maven.fabricmc.net/'
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+
+    // The shipped bytecode is in the intermediary namespace, so match it here.
+    mappings "net.fabricmc:intermediary:${project.minecraft_version}:v2"
+
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+}
+
+// The fully decompiled sources live in ./decompiled for reference. They cannot be
+// recompiled as-is (the obfuscated control flow is not faithfully representable), so
+// the build assembles the mod from the original compiled classes in lib/.
+sourceSets {
+    main {
+        java { srcDirs = [] }
+    }
+}
+
+jar {
+    from zipTree(file('lib/moondlc-classes.jar'))
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    archiveClassifier = ''
+    destinationDirectory = layout.buildDirectory.dir('libs')
+    manifest {
+        attributes(
+                'Fabric-Jar-Type': 'classes',
+                'Fabric-Loom-Mixin-Remap-Type': 'mixin',
+                'Fabric-Mapping-Namespace': 'intermediary'
+        )
+    }
+}
+
+// The bundled bytecode and access widener are already in the production (intermediary)
+// namespace, so Loom's dev->production remap step must be skipped.
+tasks.named('remapJar') {
+    enabled = false
+}
+
+processResources {
+    inputs.property "version", project.version
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version,
+                "minecraft_version": project.minecraft_version,
+                "loader_version": project.loader_version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = "UTF-8"
+    it.options.release = 21
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+
+    repositories {
+        // Add repositories to publish to here.
+    }
+}

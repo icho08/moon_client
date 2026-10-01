@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Fabric-Jar-Type: classes
+Fabric-Loom-Mixin-Remap-Type: mixin
+Fabric-Mapping-Namespace: intermediary
+

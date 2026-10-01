@@ -1,0 +1,16 @@
+{
+  "required": false,
+  "package": "us.movy.moondlc.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "injectors": {
+    "defaultRequire": 0
+  },
+  "client": [
+    "minecraft.client.MinecraftClientMixin",
+    "accessors.ClientPlayerInteractionManagerAccessor",
+    "minecraft.client.KeyboardMixin",
+    "minecraft.client.gui.screen.ChatScreenMixin",
+    "client.MixinChatInputSuggestor"
+  ],
+  "mixins": []
+}

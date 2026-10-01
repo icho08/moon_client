@@ -1,0 +1,15 @@
+{
+    "vertex": "moondlc:core/hand_liquidglass",
+    "fragment": "moondlc:core/hand_drag_outline",
+    "samplers": [
+        { "name": "Sampler0" },
+        { "name": "Sampler1" }
+    ],
+    "uniforms": [
+        { "name": "ModelViewMat", "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+        { "name": "ProjMat", "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+        { "name": "Resolution", "type": "float", "count": 2, "values": [ 1920.0, 1080.0 ] },
+        { "name": "GlowColor", "type": "float", "count": 4, "values": [ 1.0, 1.0, 1.0, 0.95 ] },
+        { "name": "DraggedArm", "type": "float", "count": 1, "values": [ 0.0 ] }
+    ]
+}

@@ -1,0 +1,214 @@
+{
+  "nursultan_off": {
+    "sounds": [
+      "moondlc:nursultan_off"
+    ]
+  },
+  "nursultan_on": {
+    "sounds": [
+      "moondlc:nursultan_on"
+    ]
+  },
+  "celestial_off": {
+    "sounds": [
+      "moondlc:celestial_off"
+    ]
+  },
+  "celestial_on": {
+    "sounds": [
+      "moondlc:celestial_on"
+    ]
+  },
+  "smooth_off": {
+    "sounds": [
+      "moondlc:smooth_off"
+    ]
+  },
+  "smooth_on": {
+    "sounds": [
+      "moondlc:smooth_on"
+    ]
+  },
+  "akrien_on": {
+    "sounds": [
+      "moondlc:akrien_on"
+    ]
+  },
+  "akrien_off": {
+    "sounds": [
+      "moondlc:akrien_off"
+    ]
+  },
+  "tech_on": {
+    "sounds": [
+      "moondlc:tech_on"
+    ]
+  },
+  "tech_off": {
+    "sounds": [
+      "moondlc:tech_off"
+    ]
+  },
+  "blop_on": {
+    "sounds": [
+      "moondlc:blop_on"
+    ]
+  },
+  "blop_off": {
+    "sounds": [
+      "moondlc:blop_off"
+    ]
+  },
+  "applepay": {
+    "sounds": [
+      "moondlc:applepay"
+    ]
+  },
+  "clickgui_open": {
+    "sounds": [
+      "moondlc:clickgui_open"
+    ]
+  },
+  "clickgui_close": {
+    "sounds": [
+      {
+        "name": "moondlc:toggle",
+        "pitch": 0.92,
+        "volume": 0.65
+      }
+    ]
+  },
+  "hover": {
+    "sounds": [
+      {
+        "name": "moondlc:clickgui_open",
+        "pitch": 1.35,
+        "volume": 0.18
+      }
+    ]
+  },
+  "click": {
+    "sounds": [
+      {
+        "name": "moondlc:toggle",
+        "pitch": 1.12,
+        "volume": 0.42
+      }
+    ]
+  },
+  "critical": {
+    "sounds": [
+      "moondlc:critical"
+    ]
+  },
+  "toggle": {
+    "sounds": [
+      "moondlc:toggle"
+    ]
+  },
+  "typing": {
+    "sounds": [
+      "moondlc:typing"
+    ]
+  },
+  "welcome": {
+    "sounds": [
+      "moondlc:welcome"
+    ]
+  },
+  "rockstar_on": {
+    "sounds": [
+      "moondlc:rockstar_on"
+    ]
+  },
+  "rockstar_off": {
+    "sounds": [
+      "moondlc:rockstar_off"
+    ]
+  },
+  "moondlc_on": {
+    "sounds": [
+      "moondlc:toggle"
+    ]
+  },
+  "moondlc_off": {
+    "sounds": [
+      "moondlc:toggle"
+    ]
+  },
+  "startup": {
+    "sounds": [
+      "moondlc:welcome"
+    ]
+  },
+  "guicolorclose": {
+    "sounds": [
+      "moondlc:clickgui_close"
+    ]
+  },
+  "slider": {
+    "sounds": [
+      "moondlc:click"
+    ]
+  },
+  "target": {
+    "sounds": [
+      "moondlc:toggle"
+    ]
+  },
+  "hit4": {
+    "sounds": [
+      "moondlc:critical"
+    ]
+  },
+  "gui_open": {
+    "sounds": [
+      "moondlc:clickgui/open-gui"
+    ]
+  },
+  "gui_close": {
+    "sounds": [
+      "moondlc:clickgui/close-gui"
+    ]
+  },
+  "gui_click": {
+    "sounds": [
+      "moondlc:clickgui/buttonclick"
+    ]
+  },
+  "gui_slider": {
+    "sounds": [
+      "moondlc:clickgui/slider"
+    ]
+  },
+  "gui_typing": {
+    "sounds": [
+      "moondlc:clickgui/searchtyping"
+    ]
+  },
+  "gui_category": {
+    "sounds": [
+      "moondlc:clickgui/switchcategory"
+    ]
+  },
+  "gui_switch_left": {
+    "sounds": [
+      "moondlc:clickgui/switch-left"
+    ]
+  },
+  "gui_switch_right": {
+    "sounds": [
+      "moondlc:clickgui/switch-right"
+    ]
+  },
+  "gui_settings_open": {
+    "sounds": [
+      "moondlc:clickgui/settings-open"
+    ]
+  },
+  "gui_settings_close": {
+    "sounds": [
+      "moondlc:clickgui/settings-close"
+    ]
+  }
+}

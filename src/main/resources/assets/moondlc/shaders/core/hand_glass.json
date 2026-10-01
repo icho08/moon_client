@@ -1,0 +1,24 @@
+{
+    "vertex": "moondlc:core/hand_glass",
+    "fragment": "moondlc:core/hand_glass",
+    "samplers": [
+        { "name": "Sampler0" },
+        { "name": "Sampler1" },
+        { "name": "Sampler2" }
+    ],
+    "uniforms": [
+        { "name": "ModelViewMat", "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+        { "name": "ProjMat", "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+        { "name": "Time", "type": "float", "count": 1, "values": [ 0.0 ] },
+        { "name": "Resolution", "type": "float", "count": 2, "values": [ 1920.0, 1080.0 ] },
+        { "name": "BlurSize", "type": "float", "count": 1, "values": [ 50.0 ] },
+        { "name": "Quality", "type": "float", "count": 1, "values": [ 10.0 ] },
+        { "name": "Direction", "type": "float", "count": 1, "values": [ 10.0 ] },
+        { "name": "Refraction", "type": "float", "count": 1, "values": [ 1.0 ] },
+        { "name": "Brightness", "type": "float", "count": 1, "values": [ 1.1 ] },
+        { "name": "EnableChromatic", "type": "int", "count": 1, "values": [ 1 ] },
+        { "name": "EnableDistortion", "type": "int", "count": 1, "values": [ 0 ] },
+        { "name": "HideHand", "type": "int", "count": 1, "values": [ 1 ] },
+        { "name": "BackgroundBlur", "type": "float", "count": 1, "values": [ 70.0 ] }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "vertex": "moondlc:core/hand_liquidglass",
+    "fragment": "moondlc:core/hand_flame_trail",
+    "samplers": [
+        { "name": "Sampler0" },
+        { "name": "Sampler1" },
+        { "name": "Sampler2" },
+        { "name": "Sampler3" },
+        { "name": "Sampler4" }
+    ],
+    "uniforms": [
+        { "name": "ModelViewMat", "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+        { "name": "ProjMat", "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+        { "name": "Resolution", "type": "float", "count": 2, "values": [ 1920.0, 1080.0 ] },
+        { "name": "Strength", "type": "float", "count": 1, "values": [ 0.85 ] },
+        { "name": "RiseSpeed", "type": "float", "count": 1, "values": [ 0.0 ] },
+        { "name": "Wobble", "type": "float", "count": 1, "values": [ 0.65 ] },
+        { "name": "FlameLength", "type": "float", "count": 1, "values": [ 0.95 ] },
+        { "name": "Brightness", "type": "float", "count": 1, "values": [ 0.9 ] },
+        { "name": "FlameWidth", "type": "float", "count": 1, "values": [ 1.0 ] },
+        { "name": "Fire", "type": "float", "count": 1, "values": [ 1.0 ] },
+        { "name": "Turbulence", "type": "float", "count": 1, "values": [ 1.0 ] },
+        { "name": "CameraShift", "type": "float", "count": 2, "values": [ 0.0, 0.0 ] },
+        { "name": "CompositeMode", "type": "float", "count": 1, "values": [ 0.0 ] },
+        { "name": "Time", "type": "float", "count": 1, "values": [ 0.0 ] },
+        { "name": "FlameColor", "type": "float", "count": 4, "values": [ 1.0, 1.0, 1.0, 0.9 ] }
+    ]
+}

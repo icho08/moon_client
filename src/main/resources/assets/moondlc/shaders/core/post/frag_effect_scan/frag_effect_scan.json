@@ -1,0 +1,18 @@
+{
+  "vertex": "moondlc:core/post/frag_effect_scan/frag_effect_scan",
+  "fragment": "moondlc:core/post/frag_effect_scan/frag_effect_scan",
+  "samplers": [
+    { "name": "DepthSampler" }
+  ],
+  "uniforms": [
+    { "name": "uInvProjection",   "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+    { "name": "uInvView",         "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+    { "name": "uCameraPosRadius", "type": "float",     "count": 4,  "values": [ 0.0, 0.0, 0.0, 1.0 ] },
+    { "name": "uCenterWidth",     "type": "float",     "count": 4,  "values": [ 0.0, 0.0, 0.0, 1.0 ] },
+    { "name": "uOuterColor",      "type": "float",     "count": 4,  "values": [ 1.0, 0.2, 0.2, 1.0 ] },
+    { "name": "uMidColor",        "type": "float",     "count": 4,  "values": [ 1.0, 0.5, 0.0, 1.0 ] },
+    { "name": "uInnerColor",      "type": "float",     "count": 4,  "values": [ 0.2, 0.8, 1.0, 1.0 ] },
+    { "name": "uScanlineColor",   "type": "float",     "count": 4,  "values": [ 1.0, 1.0, 1.0, 1.0 ] },
+    { "name": "uMeta",            "type": "float",     "count": 4,  "values": [ 1.0, 0.0, 0.0, 0.0 ] }
+  ]
+}
